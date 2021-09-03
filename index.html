@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from neverlose.cc/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jul 2021 14:49:24 GMT -->
+<head>
+<link href="static/assets/css/app80ba.css?v=23" rel="stylesheet">
+<meta name="google-site-verification" content="8kDVb1U83X9tvIBFSqOfemMOGwRcWc-H1BOBZE_5gCI" />
+<meta name="verification" content="28d5f7d28e31fd5be4e94628a4f47a" />
+<meta name="yandex-verification" content="f5eb71addea0ad12" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>NeverLose.cc</title>
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#0095B9">
+<meta name="theme-color" content="#0095B9">
+<link rel="apple-touch-icon" sizes="180x180" href="static/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="static/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="static/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+<div>
+
+<div style="display: none;" id="xd-csrf--" x-csrf=""></div>
+<script>
+      document.addEventListener("DOMContentLoaded", function(){
+        let cse = document.getElementById("xd-csrf--");
+        let cst = cse.getAttribute("x-csrf");
+        if (!cst) { return; }
+
+        let forms = document.getElementsByTagName("form");
+        for(var i = 0; i < forms.length; i++) {
+          let input = document.createElement("input");
+          input.type = "hidden";
+          input.name = "csrf";
+          input.value = cst;
+          forms[i].appendChild(input);
+        }
+      });
+    </script>
+<div class="popup_fade"></div>
+<script>
+        var auth_captcha;
+        var reg_captcha;
+        var forgot_captcha;
+        var captchaCallBack = function() {
+            auth_captcha = grecaptcha.render('auth-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+
+            reg_captcha = grecaptcha.render('reg-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+            
+            forgot_captcha = grecaptcha.render('forgot-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+        };
+</script>
+<div class="popups" id="reg">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/doregister" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="input_log">
+<input type="text" placeholder="Login" name="login" required>
+</div>
+<div class="input_pass">
+<input type="password" placeholder="Password" name="password" required>
+</div>
+<div class="input_email">
+<input type="email" placeholder="Email" name="email" required>
+</div>
+<div class="capcha"><div id="auth-captcha"></div></div>
+<div class="check">
+<input type="checkbox" name="yes" id="yesCheck" required>
+<label for="yesCheck">I agree with <a href="tos.html">terms of use</a>
+and <a href="privacy.html">privacy policy</a>
+</label>
+</div>
+<input type="submit" value="Register" class="btn">
+</div>
+</form>
+</div>
+</div>
+<div class="popups" id="log">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/login" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="input_log">
+<input type="text" placeholder="Login" name="login" required>
+</div>
+<div class="input_pass">
+<input type="password" placeholder="Password" name="password" required>
+</div>
+<div class="capcha"><div id="reg-captcha"></div></div>
+<input type="submit" value="Login" class="btn">
+<div class="some_text">
+<a href="#respassw" class="to-popup">Forgot password?</a>
+<a href="#reg" class="to-popup">Still haven&#039;t account? <span>Register</span></a>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="popups" id="2facode">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/2falogin" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="twofa_text">
+Please enter the verification code generated by the app on your phone.
+</div>
+<div class="input_log" style="margin-bottom:5px;">
+<input type="text" placeholder="Code from authenticator" name="code" required maxlength="6" minlength="6">
+</div>
+<input type="submit" value="Login" class="btn">
+</div>
+</form>
+</div>
+</div>
+<div class="popups" id="respassw">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/resetpassw" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="input_email">
+<input type="email" placeholder="Email" name="email" required>
+</div>
+<div class="capcha"><div id="forgot-captcha"></div></div>
+<input type="submit" value="Send" class="btn">
+</div>
+</form>
+</div>
+</div>
+<section class="menu">
+<div class="logo">
+<div class="img">
+<a href="index.html"><img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo"></a>
+</div>
+</div>
+<div class="links">
+<a href="index.html">Main</a>
+<a href="status.html">Status</a>
+
+</div>
+<div class="other">
+</select>
+</div>
+<div class="reg">
+</div>
+<div class="login">
+</div>
+</div>
+</section>
+<section class="header">
+<div class="bg-img"></div>
+<div class="header-all">
+<div class="container">
+<div class="big-text">
+<div class="rhombus"></div>
+<h1>NEVERLOSE<span>.CC</span></h1>
+</div>
+<div class="small-text">
+<p>Наитупейший чит <span>с конченым ресольвером</span> и <span>ебанутым лоадером</span>, с <span>быстрой</span> и <span>конченой поддержки</span>.</p>
+</div>
+<div class="button">
+<a class="scroller">ПОСМОТРЕТЬ ПОМОЙКИ</a>
+</div>
+<div class="soc">
+<p>Follow us</p>
+<div class="items">
+<div class="item"><a target="_blank" href="https://discord.gg/nqm9VxxV3T"><i class="fab fa-discord"></i></a></div>
+<div class="item"><a target="_blank" href="https://t.me/neverlose_chat"><i class="fab fa-telegram-plane"></i></a></div>
+<div class="item"><a target="_blank" href="https://vk.com/neveriosecc"><i class="fab fa-vk"></i></a></div>
+</div> </div>
+<button type="button" class="scroll_down scroller"></button>
+</div>
+</div>
+</section>
+<div id="c">
+</div>
+<section class="product_slider">
+<div class="slider">
+<div class="slider_items owl-carousel">
+<div class="big_item">
+<div class="grid">
+<div class="left">
+<div class="func">
+<div class="title">Функции</div>
+<ul class="list">
+<li>Гнилой легитбот</li>
+<li>Ресольвер за 100р</li>
+<li>Красивые визуалы</li>
+<li>Охуенный Inventory Changer</li>
+<li>Красивые Binds</li>
+<li>Не работающий VAC Bypass</li>
+</ul>
+</div>
+<div class="mini-slider">
+<div class="mini-slider-title">Скрины</div>
+<div class="blue_slider">
+<div class="inner owl-carousel">
+<div class="item">
+<div class="item-img">
+<a class="zoom-gallery" href="static/assets/img/csgo_screen_011bce.jpg?v=6">
+<div class="fade"></div>
+<img src="static/assets/img/csgo_screen_011bce.jpg?v=6" alt="blue_slider">
+</a>
+</div>
+</div>
+<div class="item">
+<div class="item-img">
+<a class="zoom-gallery" href="static/assets/img/csgo_screen_021bce.jpg?v=6">
+<div class="fade"></div>
+<img src="static/assets/img/csgo_screen_021bce.jpg?v=6" alt="blue_slider">
+</a>
+</div>
+</div>
+<div class="item">
+<div class="item-img">
+<a class="zoom-gallery" href="static/assets/img/csgo_screen_031bce.jpg?v=6">
+<div class="fade"></div>
+<img src="static/assets/img/csgo_screen_031bce.jpg?v=6" alt="blue_slider">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="content">
+<div class="video_btn">
+<div class="text">Watch review</div>
+<a href="https://www.youtube.com/watch?v=WEWjyocXG2Q" target="_black">
+<div class="icon"></div>
+</a>
+</div>
+<div class="title">Контер-Пукер: помойка</div>
+<div class="subtitle"></div>
+<div class="text">Неверлуз для помойки заставит вас почувстувовать конченым дауном.<br>Один из худших легитботов и ресольвер позволит противникам унижить вас, и охуенные просто охуенные визуалы.<br></div>
+<a class="btn" href='product4a94.html?type=csgo' style="background: #da2e2a">Купить хуйню</a>
+<div class="bg">
+<div class="gradient" style="background: linear-gradient(135deg, #03a9f4 25%, rgba(3,169,244,0.3) 60%, rgba(3,169,244,0.2) 100%) no-repeat center center;">
+</div>
+<div class="vid">
+<video src="static/csgo_video.webm" autoplay="autoplay" loop="loop" muted preload="auto"></video>
+</div>
+<div class="img">
+<img src="static/assets/img/csgo_bg.jpg" alt="bg">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="big_item">
+<div class="grid">
+<div class="left">
+<div class="func">
+<div class="title">Функции</div>
+<ul class="list">
+<li>Ресольвер за 100р</li>
+<li>Красивые визуалы</li>
+<li>Радар</li>
+<li>Loot</li>
+<li>Skinchanger</li>
+<li>EAC Bypass</li>
+</ul>
+</div>
+<div class="mini-slider">
+<div class="mini-slider-title">Скрины</div>
+<div class="blue_slider">
+<div class="inner owl-carousel">
+<div class="item">
+<div class="item-img">
+<a class="zoom-gallery" href="static/assets/img/apex_screen_011bce.jpg?v=6">
+<div class="fade"></div>
+<img src="static/assets/img/apex_screen_011bce.jpg?v=6" alt="blue_slider">
+</a>
+</div>
+</div>
+<div class="item">
+<div class="item-img">
+<a class="zoom-gallery" href="static/assets/img/apex_screen_021bce.jpg?v=6">
+<div class="fade"></div>
+<img src="static/assets/img/apex_screen_021bce.jpg?v=6" alt="blue_slider">
+</a>
+</div>
+</div>
+<div class="item">
+<div class="item-img">
+<a class="zoom-gallery" href="static/assets/img/apex_screen_031bce.jpg?v=6">
+<div class="fade"></div>
+<img src="static/assets/img/apex_screen_031bce.jpg?v=6" alt="blue_slider">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="content">
+<div class="video_btn">
+<div class="text">Watch review</div>
+<a href="https://www.youtube.com/watch?v=WEWjyocXG2Q" target="_black">
+<div class="icon"></div>
+</a>
+</div>
+<div class="title">Apex Legends</div>
+<div class="subtitle"></div>
+<div class="text">Neverlose for Apex Legends will allow you to make the most incredible kills in your life.<br>Thanks to customizable visuals and radar, you can see enemies even on the other end of the map.<br>With the help of skinchanger you can change the look of all your weapons. Isn't that great?<br>Only Windows 10 1803+ supported.</div>
+<a class="btn" href='product6c82.html?type=apex' style="background: #03a9f4">MORE INFO / BUY</a>
+<div class="bg">
+<div class="gradient" style="background: linear-gradient(135deg, #da2e2a 25%, rgba(218,46,42,0.3) 60%, rgba(218,46,42,0.2) 100%) no-repeat center center;">
+</div>
+<div class="vid">
+<video src="static/apex_video.webm" autoplay="autoplay" loop="loop" muted preload="auto"></video>
+</div>
+<div class="img">
+<img src="static/assets/img/apex_bg.jpg" alt="bg">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider_controls">
+<div class="arrow_left">
+<i class="fas fa-arrow-left"></i>
+</div>
+<div class="arrow_right">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+</div>
+</section>
+<div>
+<section class="we">
+<div class="container">
+<div class="we-item">
+<h3>Пиздатенький сайт</h3>
+<p>Вы можете купить подписку и ресетнуть хвид, если вы продаёте аккаунт!</p>
+</div>
+<div class="we-item">
+<h3>Дохуя тупых и ненужных функций</h3>
+<p>Наш чит предлагает куча ненужного говна, что позволит вам сосать хуй лучше!</p>
+</div>
+<div class="we-item">
+<h3>Охуенные визуалы</h3>
+<p>Вы можете настроить визуалы под свой тупой вкус</p>
+</div>
+<div class="we-item">
+<h3>Тупая поддержка</h3>
+<p>Наша глупая поддержка не сможет ответить на ваши вопросы, но зато сможет унизить вас.</p>
+</div>
+<div class="we-item">
+<h3>Глупенькое community</h3>
+<p>Конченые ебланы пришли с 21 и купили софт</p>
+</div>
+<div class="we-item">
+<h3>Пиздатый дизайн</h3>
+<p>Наш чит имеет охуенный дизайн за 500р с фриланса!</p>
+</div>
+</div>
+</section>
+</div>
+<footer>
+<div class="container">
+<div class="logo">
+<div class="img">
+<a href="index.html"><img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo"></a>
+</div>
+</div>
+<div class="footer_links">
+<div class="useful_links">
+<a href="help.html">Помощь глупая</a>
+<a href="tos.html">ПРАВИЛА ИСПОЛЬЗОВАНИЯ</a>
+<a href="privacy.html">Политика конфиденциальности</a>
+<a href="contact.html">Контакты</a>
+<a href="developers.html">Для разработчкиков</a>
+</div>
+<div class="separator"></div>
+<div class="product_links">
+<a href="product4a94.html?type=csgo">CS:GO</a>
+<a href="product6c82.html?type=apex">Apex Legends</a>
+</div>
+<div class="soc">
+<p>Follow us</p>
+<div class="items">
+<div class="item"><a target="_blank" href="https://discord.gg/nqm9VxxV3T"><i class="fab fa-discord"></i></a></div>
+<div class="item"><a target="_blank" href="https://t.me/neverlose_chat"><i class="fab fa-telegram-plane"></i></a></div>
+<div class="item"><a target="_blank" href="https://vk.com/neveriose"><i class="fab fa-vk"></i></a></div>
+</div> </div>
+</div>
+<div class="copy">
+neverlose.store © 2020-2021
+</div>
+</div>
+</footer>
+</div>
+</body>
+<script type="text/javascript" src="static/assets/js/app9c55.js?v=49"></script>
+<script src='../www.google.com/recaptcha/api9acb.js?onload=captchaCallBack&amp;render=explicit'></script>
+
+<script type="text/javascript">
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
+ 
+	ym(64402294, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true
+	});
+ </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/64402294" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115062869-2">
+ </script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-115062869-3');
+ </script>

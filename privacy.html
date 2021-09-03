@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from neverlose.cc/privacy by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jul 2021 14:49:54 GMT -->
+<head>
+<link href="static/assets/css/app80ba.css?v=23" rel="stylesheet">
+<meta name="google-site-verification" content="8kDVb1U83X9tvIBFSqOfemMOGwRcWc-H1BOBZE_5gCI" />
+<meta name="verification" content="28d5f7d28e31fd5be4e94628a4f47a" />
+<meta name="yandex-verification" content="f5eb71addea0ad12" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>NeverLose.cc - Политика конфиденциальности</title>
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#0095B9">
+<meta name="theme-color" content="#0095B9">
+<link rel="apple-touch-icon" sizes="180x180" href="static/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="static/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="static/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+<div>
+
+<div style="display: none;" id="xd-csrf--" x-csrf=""></div>
+<script>
+      document.addEventListener("DOMContentLoaded", function(){
+        let cse = document.getElementById("xd-csrf--");
+        let cst = cse.getAttribute("x-csrf");
+        if (!cst) { return; }
+
+        let forms = document.getElementsByTagName("form");
+        for(var i = 0; i < forms.length; i++) {
+          let input = document.createElement("input");
+          input.type = "hidden";
+          input.name = "csrf";
+          input.value = cst;
+          forms[i].appendChild(input);
+        }
+      });
+    </script>
+<div class="popup_fade"></div>
+<script>
+        var auth_captcha;
+        var reg_captcha;
+        var forgot_captcha;
+        var captchaCallBack = function() {
+            auth_captcha = grecaptcha.render('auth-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+
+            reg_captcha = grecaptcha.render('reg-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+            
+            forgot_captcha = grecaptcha.render('forgot-captcha', {
+                'sitekey' : '6LfltkAUAAAAAIYhSuMgm33hCMmhtkuj4iLOzaxn',
+                'theme' : 'light'
+            });
+        };
+</script>
+<div class="popups" id="reg">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/doregister" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="input_log">
+<input type="text" placeholder="Login" name="login" required>
+</div>
+<div class="input_pass">
+<input type="password" placeholder="Password" name="password" required>
+</div>
+<div class="input_email">
+<input type="email" placeholder="Email" name="email" required>
+</div>
+<div class="capcha"><div id="auth-captcha"></div></div>
+<div class="check">
+<input type="checkbox" name="yes" id="yesCheck" required>
+<label for="yesCheck">I agree with <a href="tos.html">terms of use</a>
+and <a href="privacy.html">Политика конфиденциальности</a>
+</label>
+</div>
+<input type="submit" value="Register" class="btn">
+</div>
+</form>
+</div>
+</div>
+<div class="popups" id="log">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/login" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="input_log">
+<input type="text" placeholder="Login" name="login" required>
+</div>
+<div class="input_pass">
+<input type="password" placeholder="Password" name="password" required>
+</div>
+<div class="capcha"><div id="reg-captcha"></div></div>
+<input type="submit" value="Login" class="btn">
+<div class="some_text">
+<a href="#respassw" class="to-popup">Forgot password?</a>
+<a href="#reg" class="to-popup">Still haven&#039;t account? <span>Register</span></a>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="popups" id="2facode">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/2falogin" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="twofa_text">
+Please enter the verification code generated by the app on your phone.
+</div>
+<div class="input_log" style="margin-bottom:5px;">
+<input type="text" placeholder="Code from authenticator" name="code" required maxlength="6" minlength="6">
+</div>
+<input type="submit" value="Login" class="btn">
+</div>
+</form>
+</div>
+</div>
+<div class="popups" id="respassw">
+<div class="block widthPopUp">
+<div class="close">
+<a href="#"><i class="fas fa-times-circle"></i></a>
+</div>
+<form method="post" action="https://neverlose.cc/resetpassw" class="userform">
+<div class="container flex-cont">
+<div class="logo">
+<a href="index.html">
+<img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo">
+</a>
+</div>
+<div class="status"></div>
+<div class="input_email">
+<input type="email" placeholder="Email" name="email" required>
+</div>
+<div class="capcha"><div id="forgot-captcha"></div></div>
+<input type="submit" value="Send" class="btn">
+</div>
+</form>
+</div>
+</div>
+<section class="menu">
+<div class="logo">
+<div class="img">
+<a href="index.html"><img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo"></a>
+</div>
+</div>
+<div class="links">
+<a href="index.html">Main</a>
+
+</div>
+<div class="other">
+</select>
+</div>
+<div class="reg">
+</div>
+<div class="login">
+
+</div>
+</div>
+</section>
+<div>
+<section class="tos">
+<div class="wrapper">
+<h1>Политика конфиденциальности</h1>
+<div class="container">
+<div class="text">
+Настоящая Политика конфиденциальности регулирует способ, которым NeverLose собирает, использует, поддерживает и раскрывает информацию, полученную от пользователей веб-сайта neverlose.cc.<br>
+Действуя свободно, по собственному желанию и в своих интересах, а также подтверждая свою дееспособность, пользователь дает согласие на обработку своих персональных данных.<br>
+<br>
+Что мы собираем о вас:<br>
+- Никнейм;<br>
+- Почту;<br>
+- IP адресс;<br>
+- Язык браузера, OS;<br>
+- Характиеристики вашего пк.<br>
+- Файлы Cookie.<br>
+- Ваши пароли.<br>
+<br><br>
+List of data processing companies:<br>
+- Neverlose LLP - has access to all personal data<br>
+- Nikolaev Dmiriy Eduardovich IP - has access to payments data processed by PayMaster<br>
+- PayMaster, OOO - receives username and email in case you purchase via Paymaster<br>
+- JSC Bank "CCB" (PayMaster head company) - receives username and email in case you purchase via PayMaster<br>
+- Stripe - receives your username in case you purchase via Stripe<br>
+- Coinbase - receives your username in case you purchase via Coinbase<br><br>
+Your personal data is important to us. Personal data is not publicly available and cannot be accessed by other third-party.<br>
+During processing with personal data, the following actions will be performed: collection; record; systematization; accumulation; storage; clarification (updating, change); extraction; use; block; exclusion; undoing.<br>
+All your personal data can be anonymized at the request of the subject of personal data. You can create a request via our ticket system on website.<br>
+This consent is valid all the time until the end of the processing of personal data.
+<br><br>
+<span class="updated">Updated on 15.06.2021.</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer>
+<div class="container">
+<div class="logo">
+<div class="img">
+<a href="index.html"><img src="static/assets/img/logo582d.png?81351b9614212619b30585a60cb04838" alt="logo"></a>
+</div>
+</div>
+<div class="footer_links">
+<div class="useful_links">
+<a href="help.html">Помощь глупая</a>
+<a href="tos.html">ПРАВИЛА ИСПОЛЬЗОВАНИЯ</a>
+<a href="privacy.html">Политика конфиденциальности</a>
+<a href="contact.html">Контакты</a>
+<a href="developers.html">Для разработчкиков</a>
+</div>
+<div class="separator"></div>
+<div class="product_links">
+<a href="product4a94.html?type=csgo">CS:GO</a>
+<a href="product6c82.html?type=apex">Apex Legends</a>
+</div>
+<div class="soc">
+<p>Follow us</p>
+<div class="items">
+<div class="item"><a target="_blank" href="https://discord.gg/nqm9VxxV3T"><i class="fab fa-discord"></i></a></div>
+<div class="item"><a target="_blank" href="https://t.me/neverlose_chat"><i class="fab fa-telegram-plane"></i></a></div>
+<div class="item"><a target="_blank" href="https://vk.com/neveriose"><i class="fab fa-vk"></i></a></div>
+</div> </div>
+</div>
+<div class="copy">
+neverlose.store © 2020-2021
+</div>
+</div>
+</footer>
+</div>
+</body>
+<script type="text/javascript" src="static/assets/js/app9c55.js?v=49"></script>
+<script src='../www.google.com/recaptcha/api9acb.js?onload=captchaCallBack&amp;render=explicit'></script>
+
+<script type="text/javascript">
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
+ 
+	ym(64402294, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true
+	});
+ </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/64402294" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115062869-2">
+ </script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-115062869-3');
+ </script>
