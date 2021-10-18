@@ -1,0 +1,36 @@
+<html>
+<script language="JavaScript">
+function login()
+{
+var login=document.iAccInput.iName.value;
+var password=document.iAccInput.iAccID.value;
+var trueName = "Soufiw";
+var truePassword = "bebra2007";
+if ((login == trueName) && (password == truePassword))
+{
+    document.location.href='https://neverlose.store/admin/admin.html';
+}
+else
+{
+    alert("Error! Try again");
+}
+}
+</script>
+ </head>
+ 
+ <body>
+<center>
+<form name="iAccInput">
+<table border="3" cellpadding="3" cellspacing="3" bgcolor="#C0C0C0" bordercolor="#808080" bordercolorlight="#808080" bordercolordark="#000000">
+         <tr>
+              <td align="RIGHT"><font size="3">Name
+                      <br>Password</font></td>
+              <td><input type="TEXT" name="iName" maxlength="15" size="20">
+                      <br><input name="iAccID" maxlength="15" height="50" size="20"></td>
+              <td><input type="BUTTON" value=" Login " onclick="login()" height="40" width="50"></td>
+        </tr>
+</table>
+</form> 
+ </body>
+</center>
+</html>

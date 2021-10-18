@@ -1,0 +1,68 @@
+<p>Настройки лоадера</p>
+
+<fieldset>
+    <legend>Включение/выключение лоадера</legend>
+
+    <input type="radio" id="kraken" name="monster">
+    <label for="kraken">Включить</label><br/>
+
+    <input type="radio" id="sasquatch" name="monster">
+    <label for="sasquatch">Выключить</label><br/>
+
+    <input type="radio" id="mothman" name="monster">
+    <label for="mothman">На тех. работу</label>
+</fieldset>
+
+
+<br>
+<button onclick="myFunction()">Apply</button>
+
+<script>
+function myFunction() {
+  alert("Successfully!");
+}
+</script>
+<br>
+<br>
+<label for="name">Сделать новость: </label>
+<textarea name="comment" cols="40" rows="3"></textarea></p>
+<button onclick="myFunction()">Apply</button>
+
+<script>
+function myFunction() {
+  alert("Successfully!");
+}
+</script>
+<br>
+<label for="name">Версия лоадера: </label>
+
+<input type="text" id="name" name="name" required
+       minlength="4" maxlength="300" size="100">
+<br>
+<button onclick="myFunction()">Apply</button>
+
+<script>
+function myFunction() {
+  alert("Successfully!");
+}
+</script>
+<br>
+<label for="dll">Обновить лоадер:</label>
+<input type="file"
+       id="loader" name="loader"
+       accept=".exe">
+<br>
+<br>
+<label for="dll">Обновить DLL:</label>
+<input type="file"
+       id="dll" name="dll"
+       accept=".dll">
+<br>
+<br>
+<button onclick="back()">Назад в админку</button>
+<script>
+    function back() {
+	    document.location.href='https://neverlose.store/admin/admin.html';
+	}
+</script>
+</html>
